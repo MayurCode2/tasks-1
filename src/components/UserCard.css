@@ -1,0 +1,134 @@
+/* UserCard.css */
+
+.user-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+  .user-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+  }
+  .user-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .user-info h2{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .user-card img {
+    border-radius: 50%;
+  }
+  
+  .user-info {
+    margin-top: 15px;
+    
+  }
+
+  .user-info-icons{
+    display: flex;
+   align-items: center;
+   margin: 0;
+    padding: 0;
+  }
+  .user-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .user-info-icons p{
+    font-size: 14px;
+  }
+  /* Add this to UserCard.css */
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  .horizontal-line-above-buttons,
+.horizontal-line {
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.button-area-modal button {
+  background-color: #fff;
+  background-color: cadetblue;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+
+}
+
+
+/* Ensure vertical line styling */
+.vertical-line {
+  border-left: 1px solid #ccc;
+  height: 20px;
+  margin: 0 10px;
+}
+  
+  /* UserCard.css */
+
+.horizontal-line-above-buttons {
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.button-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.button-area button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}

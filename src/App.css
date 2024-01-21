@@ -1,0 +1,139 @@
+/* UserCard.css */
+
+.user-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.03);
+}
+
+.user-img {
+  text-align: center;
+  padding: 10px;
+}
+
+.user-img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.user-info {
+  padding: 15px;
+}
+
+.user-info h2 {
+  margin-bottom: 10px;
+}
+
+.user-info-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.user-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.horizontal-line-above-buttons {
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.vertical-line {
+  border-left: 1px solid #ccc;
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1200px) {
+  .user-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .user-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .user-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .button-area {
+    justify-content: center;
+  }
+}
+
+/* Add styles for modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.button-area-modal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Additional styles for better mobile experience */
+@media screen and (max-width: 480px) {
+  .user-info-icons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vertical-line {
+    display: none; /* Hide vertical line on smaller screens */
+    margin: 0;
+  }
+}
